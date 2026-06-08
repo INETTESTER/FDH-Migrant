@@ -62,7 +62,7 @@ export function Attach_Medical_Cert() {
 
     const response = http.post(url, formData, params);
 
-    console.log('Response body:', response.body);
+    //console.log('Response body:', response.body);
 
     return response;
 }
