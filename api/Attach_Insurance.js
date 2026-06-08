@@ -21,6 +21,7 @@ export function Attach_Insurance() {
         headers: {
             Authorization: 'Bearer ' + token,
         },
+        timeout: '300s',
     };
 
     const response = http.post(url, formData, params);

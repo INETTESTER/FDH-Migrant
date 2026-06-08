@@ -14,6 +14,7 @@ export function profile() {
             'Content-Type': 'application/json',
             Authorization: 'Bearer ' + token,
         },
+        timeout: '300s',
     };
 
     const response = http.post(url, payload, params);
