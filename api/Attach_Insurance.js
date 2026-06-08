@@ -5,7 +5,7 @@ export function Attach_Insurance() {
     const url = 'https://fdh-migrant-clone.inet.co.th/fwf_api/v1/attach/insurance';
 
     const formData = {
-        fcode: 'F057434867639',
+        fcode: 'F056901433964',
         cid: '',
         passport_no: '',
         racode: '',
@@ -25,7 +25,7 @@ export function Attach_Insurance() {
 
     const response = http.post(url, formData, params);
 
-    console.log('Response body:', response.body);
+    //console.log('Response body:', response.body);
 
     return response;
 }

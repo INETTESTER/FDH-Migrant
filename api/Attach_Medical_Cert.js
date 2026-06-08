@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { token } from './env.js';
 
 const medicalCertFile = http.file(
-    open('../files/งานนำเสนอไม่มีชื่อ.pdf', 'b'),
+    open('../file/งานนำเสนอไม่มีชื่อ.pdf', 'b'),
     'medical_certificate_17348_Coco_251230.pdf',
     'application/pdf'
 );
@@ -11,7 +11,7 @@ export function Attach_Medical_Cert() {
     const url = 'https://fdh-migrant-clone.inet.co.th/fwf_api/v1/attach/medical-cert';
 
     const formData = {
-        fcode: 'F057434867639',
+        fcode: 'F056901433964',
         cid: '',
         passport_no: '',
         racode: '',

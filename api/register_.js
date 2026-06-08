@@ -7,13 +7,14 @@ const imageFile = http.file(
     'image/jpeg'
 );
 
-export function register_() {
+export function register_(cid) {
     const url = `https://fdh-migrant-clone.inet.co.th/fwf_api/v1/bio_id/register`;
+    const id = `${__VU}${__ITER}${cid}`;  // รันเลข id ด้วยเลข VU กับ ITER  เช่น 10,20,30
 
     const formData = {
         register_date: '2026-01-27',
         hcode: '00000',
-        cid: '0191823353113',
+        cid: ''+id,
         passport_no: '-',
         title: 'นาย',
         title_eng: 'Mr.',
@@ -54,7 +55,7 @@ export function register_() {
 
     const response = http.post(url, formData, params);
 
-    console.log('Response body:', response.body);
+    //console.log('Response body:', response.body);
 
     return response;
 }

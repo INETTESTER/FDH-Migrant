@@ -6,7 +6,7 @@ export function profile() {
 
     const payload = JSON.stringify({
         type: 'fcode',
-        code: 'F057434867639',
+        code: 'F048909237724',
     });
 
     const params = {
@@ -18,7 +18,7 @@ export function profile() {
 
     const response = http.post(url, payload, params);
 
-    console.log('Response body:', response.body);
+    //console.log('Response body:', response.body);
 
     return response;
 }
